@@ -1,6 +1,6 @@
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:Arial;
     background:#F1F3F6;
 }
 
@@ -8,73 +8,19 @@ body{
     width:100%;
     padding:10px;
     border:none;
-    outline:none;
-    border-radius:2px;
 }
 
 .menu th{
-    position:relative;
-    cursor:pointer;
-    font-size:16px;
     padding:12px;
+    cursor:pointer;
 }
 
 .menu th:hover{
     color:#2874F0;
 }
 
-/* DROPDOWN */
-.dropdown{
-    display:none;
-    position:absolute;
-    top:40px;
-    left:0;
-    background:white;
-    width:200px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    z-index:10;
-}
-
-.dropdown a{
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    color:black;
-    font-size:14px;
-}
-
-.dropdown a:hover{
-    background:#F1F3F6;
-}
-
-.menu th:hover .dropdown{
-    display:block;
-}
-
-/* IMAGE ZOOM */
-.img-box{
-    overflow:hidden;
-}
-
-.zoom-img{
-    transition: transform 0.3s ease;
-}
-
-.zoom-img:hover{
-    transform: scale(1.15);
-}
-
-/* PRODUCT */
-.price{
-    margin-top:5px;
-    font-size:18px;
-    font-weight:bold;
-    color:green;
-}
-
 h2{
     margin-left:20px;
-    font-size:32px;
 }
 
 hr{
@@ -84,7 +30,22 @@ hr{
     margin:5px 20px;
 }
 
-/* FOOTER */
+.zoom{
+    width:250px;
+    height:200px;
+    transition:0.3s;
+}
+
+.zoom:hover{
+    transform:scale(1.1);
+}
+
+.price{
+    color:green;
+    font-weight:bold;
+    margin-top:5px;
+}
+
 .footer{
     background:#2874F0;
     color:white;
