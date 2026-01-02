@@ -2,105 +2,7 @@
 <html>
 <head>
     <title>flipkart.com</title>
-
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background:#F1F3F6;
-        }
-
-        /* HEADER */
-        .search-box{
-            width:100%;
-            padding:10px;
-            border:none;
-            outline:none;
-            border-radius:2px;
-        }
-
-        /* MENU */
-        .menu th{
-            position:relative;
-            cursor:pointer;
-            font-size:16px;
-            padding:12px;
-        }
-
-        .menu th:hover{
-            color:#2874F0;
-        }
-
-        /* DROPDOWN */
-        .dropdown{
-            display:none;
-            position:absolute;
-            top:40px;
-            left:0;
-            background:white;
-            width:200px;
-            box-shadow:0 4px 8px rgba(0,0,0,0.2);
-            z-index:10;
-        }
-
-        .dropdown a{
-            display:block;
-            padding:10px;
-            text-decoration:none;
-            color:black;
-            font-size:14px;
-        }
-
-        .dropdown a:hover{
-            background:#F1F3F6;
-        }
-
-        .menu th:hover .dropdown{
-            display:block;
-        }
-
-        /* IMAGE ZOOM */
-        .img-box{
-            overflow:hidden;
-        }
-
-        .zoom-img{
-            transition: transform 0.3s ease;
-        }
-
-        .zoom-img:hover{
-            transform: scale(1.15);
-        }
-
-        /* PRODUCT */
-        .price{
-            margin-top:5px;
-            font-size:18px;
-            font-weight:bold;
-            color:green;
-        }
-
-        h2{
-            margin-left:20px;
-            font-size:32px;
-        }
-
-        hr{
-            height:3px;
-            background:black;
-            border:none;
-            margin:5px 20px;
-        }
-
-        /* FOOTER */
-        .footer{
-            background:#2874F0;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -113,7 +15,7 @@
     </td>
 
     <td width="65%">
-        <input type="text" class="search-box" placeholder="Search for products, brands and more">
+        <input class="search-box" placeholder="Search for products, brands and more">
     </td>
 
     <td width="20%" align="center">
@@ -122,146 +24,84 @@
 </tr>
 </table>
 
-<!-- MENU WITH DROPDOWNS -->
+<!-- MENU (HORIZONTAL) -->
 <table width="100%" bgcolor="white" class="menu">
 <tr align="center">
-    <th>
-        Electronics
-        <div class="dropdown">
-            <a href="#">Mobiles</a>
-            <a href="#">Laptops</a>
-            <a href="#">Headphones</a>
-            <a href="#">Cameras</a>
-        </div>
-    </th>
-
-    <th>
-        Men
-        <div class="dropdown">
-            <a href="#">T-Shirts</a>
-            <a href="#">Shirts</a>
-            <a href="#">Jeans</a>
-            <a href="#">Shoes</a>
-        </div>
-    </th>
-
-    <th>
-        Women
-        <div class="dropdown">
-            <a href="#">Dresses</a>
-            <a href="#">Sarees</a>
-            <a href="#">Handbags</a>
-            <a href="#">Footwear</a>
-        </div>
-    </th>
-
-    <th>
-        Kids
-        <div class="dropdown">
-            <a href="#">Toys</a>
-            <a href="#">School Bags</a>
-            <a href="#">Clothing</a>
-        </div>
-    </th>
-
-    <th>
-        Home & Furniture
-        <div class="dropdown">
-            <a href="#">Sofa</a>
-            <a href="#">Beds</a>
-            <a href="#">Dining Table</a>
-            <a href="#">Wardrobe</a>
-        </div>
-    </th>
-
-    <th>
-        Sports & Books
-        <div class="dropdown">
-            <a href="#">Cricket</a>
-            <a href="#">Football</a>
-            <a href="#">Stationery</a>
-            <a href="#">Novels</a>
-        </div>
-    </th>
-
-    <th>
-        Offer Zone
-        <div class="dropdown">
-            <a href="#">Daily Deals</a>
-            <a href="#">Festive Offers</a>
-            <a href="#">Coupons</a>
-            <a href="#">Bank Offers</a>
-        </div>
-    </th>
+    <th>Electronics</th>
+    <th>Men</th>
+    <th>Women</th>
+    <th>Kids</th>
+    <th>Home & Furniture</th>
+    <th>Sports & Books</th>
+    <th>Offer Zone</th>
 </tr>
 </table>
 
 <!-- BANNER -->
-<img src="images.jpg/banner.jpg" width="100%" height="350">
+<img src="images.jpg/banner.jpg" width="100%" height="300">
 
 <!-- SCHOOL BAGS -->
 <h2>School Bags</h2>
 <hr>
 
-<table width="100%" bgcolor="white">
-<tr align="center">
-    <th>
+<div class="product-list">
+
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/bag1.jpeg" width="250" height="200" class="zoom-img">
+            <img src="images.jpg/bag1.jpeg" class="zoom-img">
         </div>
         <div class="price">₹199</div>
-    </th>
+    </div>
 
-    <th>
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/bag2.jpeg" width="250" height="200" class="zoom-img">
+            <img src="images.jpg/bag2.jpeg" class="zoom-img">
         </div>
         <div class="price">₹99</div>
-    </th>
+    </div>
 
-    <th>
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/bag3.jpeg" width="250" height="200" class="zoom-img">
+            <img src="images.jpg/bag3.jpeg" class="zoom-img">
         </div>
         <div class="price">₹299</div>
-    </th>
-</tr>
-</table>
+    </div>
+
+</div>
 
 <!-- MOBILE PHONES -->
 <h2>Mobile Phones</h2>
 <hr>
 
-<table width="100%" bgcolor="white">
-<tr align="center">
-    <th>
+<div class="product-list">
+
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/mobile1.jpeg" width="250" height="250" class="zoom-img">
+            <img src="images.jpg/mobile1.jpeg" class="zoom-img">
         </div>
         <div class="price">₹799</div>
-    </th>
+    </div>
 
-    <th>
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/mobile2.jpeg"width="250" height="250" class="zoom-img">
+            <img src="images.jpg/mobile2.jpeg" class="zoom-img">
         </div>
         <div class="price">₹999</div>
-    </th>
+    </div>
 
-    <th>
+    <div class="product">
         <div class="img-box">
-            <img src="images.jpg/mobile3.jpeg" width="250" height="250" class="zoom-img">
+            <img src="images.jpg/mobile3.jpeg" class="zoom-img">
         </div>
         <div class="price">₹709</div>
-    </th>
-</tr>
-</table>
+    </div>
+
+</div>
 
 <!-- FOOTER -->
 <div class="footer">
-    © 2025 Flipkart Clone | HTML & CSS Project
+    © 2025 Flipkart Clone | HTML & CSS
 </div>
 
 </body>
 </html>
-
