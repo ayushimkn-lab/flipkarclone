@@ -4,67 +4,55 @@ body{
     background:#F1F3F6;
 }
 
+/* SEARCH */
 .search-box{
     width:100%;
     padding:10px;
     border:none;
     outline:none;
-    border-radius:2px;
 }
 
+/* MENU */
 .menu th{
-    position:relative;
-    cursor:pointer;
-    font-size:16px;
     padding:12px;
+    font-size:16px;
+    cursor:pointer;
 }
 
 .menu th:hover{
     color:#2874F0;
 }
 
-/* DROPDOWN */
-.dropdown{
-    display:none;
-    position:absolute;
-    top:40px;
-    left:0;
+/* ITEMS VERTICAL */
+.product-list{
+    display:flex;
+    flex-direction:column;   /* vertical items */
+    align-items:flex-start;  /* left aligned */
+    padding-left:20px;
+}
+
+.product{
     background:white;
-    width:200px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    z-index:10;
-}
-
-.dropdown a{
-    display:block;
     padding:10px;
-    text-decoration:none;
-    color:black;
-    font-size:14px;
+    margin-bottom:15px;
 }
 
-.dropdown a:hover{
-    background:#F1F3F6;
-}
-
-.menu th:hover .dropdown{
-    display:block;
-}
-
-/* IMAGE ZOOM */
+/* IMAGE */
 .img-box{
     overflow:hidden;
 }
 
 .zoom-img{
-    transition: transform 0.3s ease;
+    width:250px;
+    display:block;
+    transition:0.3s;
 }
 
 .zoom-img:hover{
-    transform: scale(1.15);
+    transform:scale(1.15);
 }
 
-/* PRODUCT */
+/* PRICE */
 .price{
     margin-top:5px;
     font-size:18px;
@@ -72,9 +60,342 @@ body{
     color:green;
 }
 
+/* HEADINGS */
 h2{
     margin-left:20px;
-    font-size:32px;
+    font-size:28px;
+}
+
+hr{
+    height:3px;
+    background:black;
+    border:none;
+    margin:5px 20px;
+}
+
+/* FOOTER */
+.footer{
+    background:#2874F0;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#F1F3F6;
+}
+
+/* SEARCH */
+.search-box{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+/* MENU */
+.menu th{
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.menu th:hover{
+    color:#2874F0;
+}
+
+/* ITEMS VERTICAL */
+.product-list{
+    display:flex;
+    flex-direction:column;   /* vertical items */
+    align-items:flex-start;  /* left aligned */
+    padding-left:20px;
+}
+
+.product{
+    background:white;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* IMAGE */
+.img-box{
+    overflow:hidden;
+}
+
+.zoom-img{
+    width:250px;
+    display:block;
+    transition:0.3s;
+}
+
+.zoom-img:hover{
+    transform:scale(1.15);
+}
+
+/* PRICE */
+.price{
+    margin-top:5px;
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+}
+
+/* HEADINGS */
+h2{
+    margin-left:20px;
+    font-size:28px;
+}
+
+hr{
+    height:3px;
+    background:black;
+    border:none;
+    margin:5px 20px;
+}
+
+/* FOOTER */
+.footer{
+    background:#2874F0;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#F1F3F6;
+}
+
+/* SEARCH */
+.search-box{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+/* MENU */
+.menu th{
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.menu th:hover{
+    color:#2874F0;
+}
+
+/* ITEMS VERTICAL */
+.product-list{
+    display:flex;
+    flex-direction:column;   /* vertical items */
+    align-items:flex-start;  /* left aligned */
+    padding-left:20px;
+}
+
+.product{
+    background:white;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* IMAGE */
+.img-box{
+    overflow:hidden;
+}
+
+.zoom-img{
+    width:250px;
+    display:block;
+    transition:0.3s;
+}
+
+.zoom-img:hover{
+    transform:scale(1.15);
+}
+
+/* PRICE */
+.price{
+    margin-top:5px;
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+}
+
+/* HEADINGS */
+h2{
+    margin-left:20px;
+    font-size:28px;
+}
+
+hr{
+    height:3px;
+    background:black;
+    border:none;
+    margin:5px 20px;
+}
+
+/* FOOTER */
+.footer{
+    background:#2874F0;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#F1F3F6;
+}
+
+/* SEARCH */
+.search-box{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+/* MENU */
+.menu th{
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.menu th:hover{
+    color:#2874F0;
+}
+
+/* ITEMS VERTICAL */
+.product-list{
+    display:flex;
+    flex-direction:column;   /* vertical items */
+    align-items:flex-start;  /* left aligned */
+    padding-left:20px;
+}
+
+.product{
+    background:white;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* IMAGE */
+.img-box{
+    overflow:hidden;
+}
+
+.zoom-img{
+    width:250px;
+    display:block;
+    transition:0.3s;
+}
+
+.zoom-img:hover{
+    transform:scale(1.15);
+}
+
+/* PRICE */
+.price{
+    margin-top:5px;
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+}
+
+/* HEADINGS */
+h2{
+    margin-left:20px;
+    font-size:28px;
+}
+
+hr{
+    height:3px;
+    background:black;
+    border:none;
+    margin:5px 20px;
+}
+
+/* FOOTER */
+.footer{
+    background:#2874F0;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#F1F3F6;
+}
+
+/* SEARCH */
+.search-box{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+/* MENU */
+.menu th{
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.menu th:hover{
+    color:#2874F0;
+}
+
+/* ITEMS VERTICAL */
+.product-list{
+    display:flex;
+    flex-direction:column;   /* vertical items */
+    align-items:flex-start;  /* left aligned */
+    padding-left:20px;
+}
+
+.product{
+    background:white;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* IMAGE */
+.img-box{
+    overflow:hidden;
+}
+
+.zoom-img{
+    width:250px;
+    display:block;
+    transition:0.3s;
+}
+
+.zoom-img:hover{
+    transform:scale(1.15);
+}
+
+/* PRICE */
+.price{
+    margin-top:5px;
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+}
+
+/* HEADINGS */
+h2{
+    margin-left:20px;
+    font-size:28px;
 }
 
 hr{
